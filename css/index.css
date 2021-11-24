@@ -11,6 +11,12 @@
   border: none;
 }
 
+@media screen and (max-width: 576px) {
+  .sidebar-menu {
+    display: none;
+  }
+}
+
 .logo {
   margin-bottom: 30px;
 }
@@ -172,6 +178,14 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding: 6px 18px;
+  border-right: 1px solid #a4acad;
+}
+
+.contacts__numbers {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -179,8 +193,6 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 6px 18px;
-  border-right: 1px solid #a4acad;
 }
 
 .contacts__title {
@@ -213,6 +225,78 @@
   color: #a4acad;
   margin-left: 5px;
   white-space: nowrap;
+}
+
+@media screen and (max-width: 576px) {
+  .header {
+    background-color: #fff;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 0 20px;
+  }
+  .header__city {
+    display: none;
+  }
+  .header__nav ul {
+    display: none;
+  }
+  .header__search {
+    margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .contacts {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    border-right: none;
+  }
+  .contacts__phone {
+    font-size: 12px;
+    white-space: nowrap;
+  }
+}
+
+.contacts__title {
+  font-size: 12px;
+}
+
+.contacts__time {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 10px;
+}
+
+.contacts__time img {
+  width: 15px;
+  height: 15px;
+  margin-left: 10px;
+}
+
+.contacts__time span {
+  font-size: 12px;
+}
+
+.contacts__work-time {
+  white-space: normal;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .slider .swiper {
@@ -715,6 +799,12 @@
   padding: 10px 30px;
   margin-top: 30px;
   color: #f2f2f2;
+}
+
+@media screen and (max-width: 576px) {
+  .sidebar-cart {
+    display: none;
+  }
 }
 
 .sidebar-map {
