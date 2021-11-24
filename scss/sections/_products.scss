@@ -84,3 +84,10 @@
     }
   }
 }
+
+
+.products {
+  @include mobile {
+    display: none;
+  }
+}

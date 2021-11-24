@@ -1,7 +1,9 @@
 .header {
   display: flex;
   border-bottom: 1px solid $bg-gray;
-
+  &__logo {
+    display: none;
+  }
   &__right {
     @include flex(center, space-between);
     padding: 0 40px 0 18px;
@@ -47,6 +49,7 @@
   display: flex;
   padding: 6px 18px;
   border-right: 1px solid $bg-gray;
+
   &__numbers {
     display: flex;
     flex-direction: column;
@@ -78,6 +81,9 @@
     background-color: $bg-white;
     align-items: center;
     padding: 0 20px;
+    &__logo {
+      display: block;
+    }
     &__city {
       display: none;
     }
