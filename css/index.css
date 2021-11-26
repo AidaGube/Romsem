@@ -1345,7 +1345,6 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  max-width: 2100px;
   margin: auto;
 }
 

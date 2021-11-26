@@ -38,12 +38,12 @@ a {
 
 .wrapper {
     display: flex;
-    max-width: 2100px;
     margin: auto;
    &__content{
        width: 100%;
        background-color: $bg-light-gray;
    }
+ 
 }
 
 .main {
