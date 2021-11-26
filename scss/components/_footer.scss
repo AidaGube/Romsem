@@ -89,3 +89,22 @@
     }
   }
 }
+
+.footer {
+    @include mobile {
+      padding: 0 20px;
+      &__row {
+        border: none;
+      }
+      &__item {
+        width: 100%;
+      }
+     &-item .footer-nav {
+       display: none;
+     }
+     &__contacts {
+       border: none;
+       padding: 0;
+     }
+    }
+}

@@ -26,7 +26,7 @@
     color: $text-light-gray;
   }
   
-  @include mobile(){
+  @include mobile{
     display: none;
   }
 }

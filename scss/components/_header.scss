@@ -47,14 +47,11 @@
 
 .contacts {
   display: flex;
+  flex-direction: column;
+  align-items: center;
   padding: 6px 18px;
   border-right: 1px solid $bg-gray;
 
-  &__numbers {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
   &__title {
     @include font(18px, 500);
     color: $text-black;
@@ -73,6 +70,11 @@
       margin-left: 5px;
       white-space: nowrap;
     }
+  }
+  &__numbers {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }
 
@@ -106,27 +108,28 @@
       font-size: 12px;
       white-space: nowrap;
     }
-  }
-  &__title {
-    font-size: 12px;
-  }
-  &__time {
-    flex-direction: column;
-    align-items: center;
-    margin-left: 10px;
-    img {
-      width: 15px;
-      height: 15px;
-      margin-left: 10px;
-    }
-    span {
+    &__title {
       font-size: 12px;
     }
-  }
-  &__work-time {
-    white-space: normal;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    &__time {
+      flex-direction: column;
+      align-items: center;
+      margin-left: 10px;
+      img {
+        width: 15px;
+        height: 15px;
+        margin-left: 10px;
+      }
+      span {
+        font-size: 12px;
+      }
+    }
+    &__work-time {
+      white-space: normal;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
   }
 }
+
