@@ -793,13 +793,13 @@
   .footer__row {
     border: none;
   }
-  .footer__item {
+  .footer-item {
     width: 100%;
   }
-  .footer-item .footer-nav {
+  .footer-item.footer-nav {
     display: none;
   }
-  .footer__contacts {
+  .footer-contacts {
     border: none;
     padding: 0;
   }

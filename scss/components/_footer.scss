@@ -96,13 +96,14 @@
       &__row {
         border: none;
       }
-      &__item {
+      &-item {
         width: 100%;
       }
-     &-item .footer-nav {
+
+     &-item.footer-nav {
        display: none;
      }
-     &__contacts {
+     &-contacts {
        border: none;
        padding: 0;
      }
