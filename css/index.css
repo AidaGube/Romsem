@@ -383,7 +383,23 @@
 
 @media screen and (max-width: 576px) {
   .menu {
-    padding-top: 0;
+    padding-top: 15px;
+  }
+  .menu.mobile {
+    display: block;
+  }
+  .menu.mobile .menu-item__title {
+    bottom: auto;
+    top: 10px;
+  }
+  .menu .row {
+    margin: 0 -5px;
+  }
+  .menu-item {
+    margin: 15px;
+  }
+  .menu-item__title {
+    font-size: 18px;
   }
 }
 
@@ -1338,14 +1354,14 @@ a {
   background-color: #f2f2f2;
 }
 
-main {
+.main {
   padding: 30px 100px;
   max-width: 1170px;
   margin: 0 auto;
 }
 
 @media screen and (max-width: 576px) {
-  main {
+  .main {
     padding: 0 20px;
   }
 }

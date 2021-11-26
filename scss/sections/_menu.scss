@@ -32,6 +32,24 @@
 
 .menu {
   @include mobile {
-    padding-top: 0;
+    &.mobile {
+      display: block;
+      .menu-item {
+        &__title {
+          bottom: auto;
+          top: 10px;
+        }
+      }
+    }
+    padding-top: 15px;
+    .row {
+      margin: 0 -5px;
+    }
+    &-item {
+      margin: 15px;
+      &__title {
+        font-size: 18px;
+      }
+    }
   }
 }
