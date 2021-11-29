@@ -43,16 +43,21 @@ a {
        width: 100%;
        background-color: $bg-light-gray;
    }
+   @include mobile {
+       overflow: hidden;
+   }
  
 }
 
-.main {
+main {
     padding: 30px 100px;
-    max-width: 1170px;
+    width: 1170px;
     margin: 0 auto;
     @include mobile {
+        width: 360px;
         padding: 0 20px;
-      }
+    }
+
 }
 
 .sidebar-cart {
@@ -60,14 +65,26 @@ a {
 }
 .col-6 {
     width: 50%;
+    @include mobile {
+        width: 100%;
+    }
 }
 .col-4 {
     width: 33.33%;
+    @include mobile {
+        width: 100%;
+    }
 }
 .col-3 {
     width: 25%;
+    @include mobile {
+        width: 100%;
+    }
 }
 .row {
     display: flex;
     flex-wrap: wrap;
+    @include mobile {
+        width: 100%;
+    }
 }

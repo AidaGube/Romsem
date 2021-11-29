@@ -92,7 +92,7 @@
 
 .footer {
     @include mobile {
-      padding: 0 20px;
+      padding: 0 20px 100px;
       &__row {
         border: none;
       }

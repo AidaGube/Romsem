@@ -36,20 +36,21 @@
       display: block;
       .menu-item {
         &__title {
-          bottom: auto;
-          top: 10px;
-        }
+          font-size: 18px;
+        }   
       }
     }
-    
+
     padding-top: 15px;
     .row {
       margin: 0 -5px;
     }
     &-item {
-      margin: 15px;
+      margin: 5px;
       &__title {
         font-size: 18px;
+        bottom: auto;
+        top: 10px; 
       }
     }
   }
