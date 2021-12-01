@@ -27,10 +27,9 @@ const swiper3 = new Swiper('.recommend__slider', {
   direction: 'horizontal',
   loop: true,
   autoplay: true,
-  slidesPerView: 3,
+  slidesPerView: 1,
   spaceBetween: 40,
   speed: 800,
-mobileFirst:true,
 
   navigation: {
     nextEl: '.recommend__button-next',
@@ -44,6 +43,6 @@ mobileFirst:true,
     1024: {
       slidesPerView: 3,
       spaceBetween: 40
-    },
+    }
   }
 });
