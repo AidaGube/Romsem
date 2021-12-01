@@ -17,7 +17,8 @@
 @import './pages/order';
 @import './components/reviews';
 @import './components/ways';
-
+@import "./components/mobile-cart";
+@import './pages/product-cart';
 
 body {
 font-family: 'Roboto', sans-serif;
@@ -39,53 +40,49 @@ a {
 
 .wrapper {
     display: flex;
+    max-width: 2100px;
     margin: auto;
-   &__content{
-       width: 100%;
-       background-color: $bg-light-gray;
-   }
-   @include mobile {
-       overflow: hidden;
-   }
- 
-}
-
-main {
+    &__content {
+      width: 100%;
+      background-color: $bg-light-gray;
+    }
+    @include mobile {
+      overflow: hidden;
+    }
+  }
+  
+  main {
     padding: 30px 100px;
-    width: 1170px;
+    max-width: 1170px;
     margin: 0 auto;
     @include mobile {
-        width: 360px;
-        padding: 0 20px;
+      padding: 0 20px;
     }
-
-}
-
-.sidebar-cart {
+  }
+  
+  .sidebar-cart {
     width: 430px;
-}
-.col-6 {
+  }
+  .col-6 {
     width: 50%;
     @include mobile {
-        width: 100%;
+      width: 100%;
     }
-}
-.col-4 {
+  }
+  .col-4 {
     width: 33.33%;
     @include mobile {
-        width: 100%;
+      width: 100%;
     }
-}
-.col-3 {
+  }
+  .col-3 {
     width: 25%;
     @include mobile {
-        width: 100%;
+      width: 50%;
     }
-}
-.row {
+  }
+  .row {
     display: flex;
     flex-wrap: wrap;
-    @include mobile {
-        width: 100%;
-    }
-}
+  }
+  
