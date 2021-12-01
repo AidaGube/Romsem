@@ -1380,7 +1380,6 @@
     background: #FFFFFF;
     border-radius: 5px;
     margin-bottom: 20px;
-    padding: 0 20px;
   }
   .reviews__text {
     height: 250px;
@@ -1396,6 +1395,9 @@
 }
 
 .ways {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
