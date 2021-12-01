@@ -1680,6 +1680,25 @@
   color: #fff;
 }
 
+.recommend__button-next, .recommend__button-prev {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #000;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
 body {
   font-family: "Roboto", sans-serif;
 }

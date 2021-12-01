@@ -32,7 +32,7 @@ const swiper3 = new Swiper('.recommend__slider', {
   speed: 800,
 
   navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
+    nextEl: '.recommend__button-next',
+    prevEl: '.recommend__button-prev',
   },
 });

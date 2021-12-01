@@ -87,7 +87,7 @@
       color: $text-black;
     }
     &__button {
-      @include flex(center,center);
+      @include flex(center, center);
     }
     &__price {
       @include font(24px, 700);
@@ -96,7 +96,7 @@
     }
 
     &__price + span {
-      @include flex(center,center);
+      @include flex(center, center);
       width: 26px;
       height: 26px;
       border-radius: 50%;
@@ -104,4 +104,17 @@
       color: $text-white;
     }
   }
+
+  &__button-next,
+  &__button-prev {
+    @include flex(center, center);
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: $bg-black;
+    border: none;
+    cursor: pointer;
+    outline: none;
+  }
+  
 }
