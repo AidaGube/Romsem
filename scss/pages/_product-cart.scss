@@ -78,6 +78,9 @@
   &__slider {
     overflow: hidden;
     text-align: center;
+    &-wrapper {
+      position: relative;
+    }
   }
 
   &-item {
@@ -116,5 +119,52 @@
     cursor: pointer;
     outline: none;
   }
-  
+
+  &__button-next {
+    position: absolute;
+    right: -80px;
+    top: 80px;
+    transform: translateY(-60%);
+    z-index: 1;
+    transform: rotate(180deg);
+  }
+  &__button-prev {
+    position: absolute;
+    left: -80px;
+    top: 80px;
+    transform: translateY(-60%);
+    z-index: 1;
+    transform: rotate(180deg);
+  }
+}
+
+.product-cart {
+  @include mobile {
+ flex-direction: column;
+ img{
+   max-width: 100%;
+ }
+ &__content {
+   padding-left: 0;
+ }
+ &__title {
+   font-size: 24px;
+ }
+ &__weight {
+   margin-bottom: 0;
+ }
+ .counter__count {
+   font-size: 26px;
+ }
+ &__details {
+   font-size: 16px;
+ }
+ &__ingredients {
+   font-size: 16px;
+ }
+ button {
+   margin-top: 10px;
+   width: 100%;
+ }
+  }
 }

@@ -30,3 +30,9 @@
     }
    
 }
+
+.ways {
+    @include mobile {
+        margin: 15px 0;
+    }
+}

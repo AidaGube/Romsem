@@ -30,9 +30,20 @@ const swiper3 = new Swiper('.recommend__slider', {
   slidesPerView: 3,
   spaceBetween: 40,
   speed: 800,
+mobileFirst:true,
 
   navigation: {
     nextEl: '.recommend__button-next',
     prevEl: '.recommend__button-prev',
   },
+  breakpoints: {
+    724: {
+      slidesPerView: 2,
+      spaceBetween: 40
+    },
+    1024: {
+      slidesPerView: 3,
+      spaceBetween: 40
+    },
+  }
 });
