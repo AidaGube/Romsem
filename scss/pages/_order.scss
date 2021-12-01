@@ -1,43 +1,46 @@
-.oreder{
-    .header{
-        justify-content: center;
-        .back{
-            position: absolute;
-            left: 100px;
-            top: 50px;
-            display: flex;
-            align-items: center;
-            img{
-                margin-right: 10px;
-            }
-        }
-        .contacts{
-            border: none;
-        }
+.order {
+  .header {
+    justify-content: center;
+    .back {
+      position: absolute;
+      left: 100px;
+      top: 50px;
+      display: flex;
+      align-items: center;
+      img {
+        margin-right: 10px;
+      }
     }
-    &-form{
-        max-width: 760px;
-        margin: auto;
+    .contacts {
+      border: none;
     }
-    &__title{
-        @include font(24px,400);
-        color: $text-black;
-        margin-bottom: 30px;
+  }
+  &-form {
+    max-width: 760px;
+    margin: auto;
+  }
+  &__title {
+    @include font(24px, 400);
+    color: $text-black;
+    margin-bottom: 30px;
+  }
+  input {
+    @include font(18px, 400);
+    background-color: #ffffff;
+    border-radius: 5px;
+    border: none;
+    padding: 10px;
+    color: #a4acad;
+    max-width: 40%;
+  }
+  &__item {
+    margin-bottom: 20px;
+    input:first-of-type {
+      margin-right: 20px;
     }
-    input{
-        @include font(18px,400);
-        background-color: #ffffff;
-        border-radius: 5px;
-        border: none;
-        padding: 10px;
-        color: #a4acad;
-        max-width: 40%;
-    }
-    &__item{
-        margin-bottom: 20px;
-        input:first-of-type{
-            margin-right: 20px;
-        }
-    }
+  }
+
+  &-form__right{
+  }
 }
 

@@ -1158,13 +1158,13 @@
   }
 }
 
-.oreder .header {
+.order .header {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
 }
 
-.oreder .header .back {
+.order .header .back {
   position: absolute;
   left: 100px;
   top: 50px;
@@ -1176,20 +1176,20 @@
           align-items: center;
 }
 
-.oreder .header .back img {
+.order .header .back img {
   margin-right: 10px;
 }
 
-.oreder .header .contacts {
+.order .header .contacts {
   border: none;
 }
 
-.oreder-form {
+.order-form {
   max-width: 760px;
   margin: auto;
 }
 
-.oreder__title {
+.order__title {
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
@@ -1198,7 +1198,7 @@
   margin-bottom: 30px;
 }
 
-.oreder input {
+.order input {
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -1211,11 +1211,11 @@
   max-width: 40%;
 }
 
-.oreder__item {
+.order__item {
   margin-bottom: 20px;
 }
 
-.oreder__item input:first-of-type {
+.order__item input:first-of-type {
   margin-right: 20px;
 }
 
@@ -1616,6 +1616,68 @@
   border: none;
   cursor: pointer;
   color: #f2f2f2;
+}
+
+.recommend__title {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.5;
+  color: #000;
+  margin: 30px 0 20px;
+  text-align: center;
+}
+
+.recommend__slider {
+  overflow: hidden;
+  text-align: center;
+}
+
+.recommend-item__title {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.5;
+  margin: 10px 0;
+  color: #000;
+}
+
+.recommend-item__button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.recommend-item__price {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.5;
+  margin-right: 10px;
+  color: #000;
+}
+
+.recommend-item__price + span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background-color: #f46d40;
+  color: #fff;
 }
 
 body {

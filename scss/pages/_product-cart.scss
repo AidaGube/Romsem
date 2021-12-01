@@ -47,16 +47,16 @@
     }
   }
   &__details {
-      @include font (18px,500);
-      color: $text-black;
-      margin-bottom: 5px;
+    @include font(18px, 500);
+    color: $text-black;
+    margin-bottom: 5px;
   }
   &__ingredients {
-    @include font (18px,300);
+    @include font(18px, 300);
     color: $text-black;
   }
   button {
-    @include font (24px,500);
+    @include font(24px, 500);
     margin-top: 30px;
     padding: 5px 40px;
     background: $bg-orange;
@@ -64,5 +64,44 @@
     border: none;
     cursor: pointer;
     color: #f2f2f2;
+  }
+}
+
+.recommend {
+  &__title {
+    @include font(24px, 500);
+    color: $text-black;
+    margin: 30px 0 20px;
+    text-align: center;
+  }
+
+  &__slider {
+    overflow: hidden;
+    text-align: center;
+  }
+
+  &-item {
+    &__title {
+      @include font(18px, 500);
+      margin: 10px 0;
+      color: $text-black;
+    }
+    &__button {
+      @include flex(center,center);
+    }
+    &__price {
+      @include font(24px, 700);
+      margin-right: 10px;
+      color: $text-black;
+    }
+
+    &__price + span {
+      @include flex(center,center);
+      width: 26px;
+      height: 26px;
+      border-radius: 50%;
+      background-color: $bg-dark-orange;
+      color: $text-white;
+    }
   }
 }
