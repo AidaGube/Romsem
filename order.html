@@ -68,13 +68,12 @@
         </div>
       </header>
       <main>
-        <section>
-          <div class="order-form__row">
+        <section>       
             <form class="order-form">
               <h3 class="order-form__title">Ваши данные</h3>
             
-                <div class="col-6">
-                  <div class="order-form__left">
+              <div class="order-form__row">
+                <div class="order-form__left"> 
                   <div class="order-form__item">
                     <input type="text" placeholder="Телефон" />
                     <input type="text" placeholder="Имя" />
@@ -94,70 +93,78 @@
                     <span>Подготовить сдачу с</span>
                     <input type="text" placeholder="Сумма" />
                   </div>
+
+
                   <div class="order-form__item">
-                    <span>Палочки + соусник обычные</span>
-                    <div>
-                      <span>-</span>
-                      <span>10</span>
-                      <span>+</span>
+                    <input class="col-12" type="text" placeholder="Комменатрий к заказу" />
+                  </div>
+
+                  <div class="order-details">
+                    <span class="order-details__extra">Палочки + соусник обычные</span>
+               <span class="order-details__min">-</span>
+                    <span class="order-details__count">10</span>
+                    <span class="order-details__pl">+</span>
+                    </div>
+
+                    <div class="order-details">
+                      <span class="order-details__extra">Палочки + соусник обычные</span>
+                 <span class="order-details__min">-</span>
+                      <span class="order-details__count">10</span>
+                      <span class="order-details__pl">+</span>
+                      </div>
+  
+        
+                  <div>
+                    <input class="col-12" type="text" placeholder="Введите промокод" />
+                  </div>
+        
+                </div>
+                 
+                <div class="order-form__right">
+                  <label>
+                    <input name="payment-method" type="radio" />
+                    <span>Курьером</span>
+                  </label>
+                  <label>
+                    <input name="payment-method" type="radio" />
+                    <span>Самовывоз</span>
+                  </label>
+                    <div class="order-form__item ">
+                      <input class="col-6" type="text" placeholder="Улица" />
+                      <input class="col-3" type="text" placeholder="Дом" />
+                  </div>
+                  <div class="col-3">
+                    <div class="order-form__item">
+                      <input type="text" placeholder="Кв" />
+                      <input type="text" placeholder="Подъезд" />
+                      <input type="text" placeholder="Этаж" />
+                      <input type="text" placeholder="Код" />
                     </div>
                   </div>
+                  <label>
+                    <input name="payment-method" type="radio" />
+                    <span>На сейчас</span>
+                  </label>
+                  <label>
+                    <input name="payment-method" type="radio" />
+                    <span>На время</span>
+                  </label>
                   <div class="order-form__item">
-                    <span>Палочки + соусник обычные</span>
-                    <div>
-                      <span>-</span>
-                      <span>10</span>
-                      <span>+</span>
-                    </div>
+                    <input  class="col-6"  type="text" placeholder="E-mail(необязательно)" />
                   </div>
-                  <input type="text" placeholder="Введите промокод" />
+                 </div>
+                 
+                </form>
                 </div>
-                
-              </div>
-              <div class="col-6">
-              <div class="order-form__right">
-                <label>
-                  <input name="payment-method" type="radio" />
-                  <span>Курьером</span>
-                </label>
-                <label>
-                  <input name="payment-method" type="radio" />
-                  <span>Самовывоз</span>
-                </label>
-                <div class="col-6">
-                  <div class="order-form__item">
-                    <input type="text" placeholder="Улица" />
-                    <input type="text" placeholder="Дом" />
-                  </div>
-                </div>
-                <div class="col-3">
-                  <div class="order-form__item">
-                    <input type="text" placeholder="Кв" />
-                    <input type="text" placeholder="Подъезд" />
-                    <input type="text" placeholder="Этаж" />
-                    <input type="text" placeholder="Код" />
-                  </div>
-                </div>
-                <label>
-                  <input name="payment-method" type="radio" />
-                  <span>На сейчас</span>
-                </label>
-                <label>
-                  <input name="payment-method" type="radio" />
-                  <span>На время</span>
-                </label>
-                <div class="order-form__item">
-                  <input type="text" placeholder="E-mail(необязательно)" />
-                </div>
-              </form>
-              </div>
-            </div>
-            <button>Оформить заказ</button>
-            <p>
-              Нажимая на кнопку Оформить заказ, Вы подтверждаете свое согласие на
-              обработку персональных данных в соответствии с Публичной оффертой
-            </p>
+
+                <button  class="order__button">Оформить заказ</button>
+                <p class="order-text">
+                  Нажимая на кнопку Оформить заказ, Вы подтверждаете свое согласие на
+                  обработку персональных данных в соответствии с
+                   <u> Публичной оффертой </u> 
+                </p>
           </div>
+        </div>
         </section>
       </main>
     </div>

@@ -41,10 +41,6 @@
         color: $text-white;
       }
     }
-    &__count {
-      margin-right: 10px;
-      font-size: 36px;
-    }
   }
   &__details {
     @include font(18px, 500);
